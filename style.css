@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 10px;
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  background-color: hsl(204, 43%, 93%);
+}
+
+.main {
+  width: 85%;
+  margin: 4rem auto 0 auto;
+  border-radius: 8px;
+}
+
+/*usable css*/
+
+.heading-primary {
+  font-size: 2rem;
+}
+.para {
+  font-size: 1.6rem;
+}
+.sub-head {
+  display: inline-block;
+  font-size: 1.7rem;
+  letter-spacing: -0.7px;
+  font-weight: 700;
+  color: hsl(71, 73%, 54%);
+  margin: 2rem 0;
+}
+
+/*sec1*/
+
+.sec1 {
+  background-color: #fff;
+  padding: 2rem;
+  grid-column: 1/-1;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.sec1-head {
+  color: hsl(179, 62%, 43%);
+}
+
+.sec1-para {
+  color: #cfd1d3;
+  line-height: 1.4;
+  margin-bottom: 2rem;
+}
+
+/*sec2*/
+.sec2 {
+  background-color: #5fb5b1;
+  padding: 2rem;
+}
+
+.sec2-head {
+  color: #fff;
+  margin: 0 0 2rem 0;
+}
+.price {
+  color: #fff;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.price-span {
+  color: aquamarine;
+  font-size: 1.4rem;
+}
+.sec2-para {
+  color: #fff;
+  margin: 0 0 2.5rem 0;
+}
+
+.btn {
+  display: block;
+  width: 90%;
+  border: none;
+  padding: 1.6rem 0;
+  color: #fff;
+  font-weight: 700;
+  background-color: hsl(71, 73%, 54%);
+  text-decoration: none;
+  font-size: 1.8rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+/*sec3*/
+
+.sec3 {
+  padding: 2rem;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+
+  background-color: #64bfbd;
+}
+
+.sec3-head {
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.sec3-list {
+  list-style-type: none;
+  color: #fff;
+}
+.sec3-list li {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+/* .btn:link,
+.btn:visited {
+  max-width: 80%;
+  background-color: hsl(71, 73%, 54%);
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+.btn:hover,
+.btn:active {
+} */
+
+@media (min-width: 1023px) {
+  .main {
+    max-width: 70rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 25rem 30rem;
+  }
+
+  .main section {
+    padding: 5rem;
+  }
+
+  .sec2 {
+    border-bottom-left-radius: 8px;
+  }
+  .sec3 {
+    border-bottom-left-radius: unset;
+  }
+}
